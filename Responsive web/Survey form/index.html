@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- <script src="https://gitcdn.link/repo/freeCodeCamp/testable-projects-fcc/master/build/bundle.js"></script>
+ -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <h1 id="title">KPA Survey Form</h1>
+  <p id="description"> <i>Kindly take your time to fill in the form below</i>
+  </p> 
+
+  <form id="survey-form">
+      <div class="form-setup">
+          <label for="name" id="name-label">Name :</label>
+          <input type="text" id="name" placeholder="Name" required/>
+      </div>
+      <div class="form-setup">
+        <label for="email" id="email-label">Email :</label>
+        <input type="email" id="email" placeholder="Email" required/>
+    </div>
+    <div class="form-setup">
+        <label for="number" id="number-label">Phone number :</label>
+        <input type="number" id="number" placeholder="Phone number" required min="0" max="9"/>
+    </div>
+    <div class="form-setup">
+        <label for="dept">Department :</label>
+        <select name="dept" id="dropdown">
+            <option value="hr">Human Resource </option>
+            <option value="it">Information Technology</option>
+            <option value="operations">Machine and Field Operations</option>
+            <option value="finance">Finance Department</option>
+        </select>
+        
+    </div>
+    <div class="form-setup">
+        <label>What is your gender :</label>
+     <label for="gender"> <input type="radio" id="gender" name="gender"/>Male
+     </label>
+     <label for="gender"> <input type="radio" id="gender" name="gender"/>Female
+     </label>
+     <label for="gender"> <input type="radio" id="gender" name="gender"/>Transgender
+     </label>
+    </div>
+    <div class="form-setup">
+        <label>What is your mode of transportation from one palce to the other ?<small> (check all that apply)</small></label>
+        <label for="transport"><input type="checkbox" value="Company's car"/>Company's car</label>
+        <label for="transport"><input type="checkbox" value="Personal car"/>Personal car</label>
+        <label for="transport"><input type="checkbox" value="Public bus"/>Public bus</label>
+        <label for="transport"><input type="checkbox" value="Walk"/>Walk</label>
+    </div>
+    <div class="form-setup">
+        <label for="comments">Put down any issues you would like to be addressed</label>
+        <textarea name="comments" id="comments" placeholder="Enter your comment here "></textarea>
+    </div>
+    <button type="submit" id="submit" >SUBMIT</button>
+  </form>
+<link rel="stylesheet" href="style.css"/> 
+</body>
+
+</html> 

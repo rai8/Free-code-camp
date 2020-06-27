@@ -1,0 +1,62 @@
+@import 
+url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+ 
+
+body {
+    background-color: #778beb;
+    font-family: 'Ubuntu', 'sans-serif';
+    text-align: center;
+    height: auto;
+}
+h1{
+    margin-bottom: 0;
+}
+h1 +p{
+    margin-top: 0;
+}
+form {
+    background-color: #f8a5c2;
+    max-width: 400px ;
+    margin: 0 auto ;
+    border-radius: 2em;
+    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.4);
+    padding: 15px 15px;
+    height: auto;
+}
+.form-setup{
+    text-align: left ;
+    margin-bottom: 8px;
+
+
+}
+.form-setup label{
+    display: block;
+    margin-bottom: 4px;
+    
+   
+    
+}
+.form-setup input, 
+.form-setup select, 
+.form-setup textarea{
+    display: block;  
+    width: 100%;
+    border-radius: 2px;
+    font-size: 12px;
+    font-family: inherit;
+}
+.form-setup input[type="radio"]{
+    display: inline-block;
+    width: auto;
+}
+.form-setup input[type="checkbox"]{
+    display: inline-block;
+    width: auto;
+}
+button{
+    background-color: #778beb;
+    display: block;
+    width: 100%;
+    font-family: inherit;
+    padding: 10px;
+}
